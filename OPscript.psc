@@ -1,4 +1,4 @@
-; ScanOPS OPscript v1.4 for mIRC
+; ScanOPS OPscript v1.4-lillelykke for mIRC
 
 menu nicklist {
   -
