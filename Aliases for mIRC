@@ -1,0 +1,17 @@
+F4 msg $active Dette er en kanal KUN for de som er chanop, ircop og +v for de skandinaviske kanalene. Vennligst ikke si at kanalen eksisterer til noen.
+
+F5 msg $active Jeg har ikke tid til å snakke privat akkurat nå. Hvis du vil snakke med meg, vær vennlig og gjør det i en kanal. / I don't have time for private chat at the moment. If you want to chat with me, please do it in a channel. | /closemsg
+
+F6 msg $active ** Scoutlink has many channels that are for specific languages. This is because many young users are unable to speak or write in for example English, so we want to provide a safe and easy environment for them where they can understand everything. | /say This has nothing to do with race or location, just simply that these are young and unexperienced users. | /say  So if there is a channel where you don't speak the language, please abide by the rules set :) **
+
+F7 msg $active ** Velkommen til denne 18. Jamboree på Internettet (JOTI). Temaet for  JOTI er ”at dele”: Hvordan er du spejder i dit land ? Hvilke aktiviteter laver i ? Spejdere fra hele planeten er samlet i denne weekend, så grib chancen for at tale med andre spejdere, om hvordan spejder-arbejdet ser ud, nu og i fremtiden. Vi ønsker alle et godt JOTI 2014.  **
+
+F8 msg $active ** Just want to notice everyone that you are not allowed to give out any personal contactinformation about yourself, including Facebook profiles :). See http://www.scoutlink.net/rules/ for more information. **
+
+F9 msg $active ** ScoutLink Minecraft server - Kom og spill! Serveren er åpen for alle speidere i hele verden. Vær vennlig og ikke ødelegg noe, vær snill, følg speiderloven og HA DET GØY! | /say Adresse: minecraft.scoutlink.net  -  IRC-kanal: #minecraft  -  Nettside: http://www.scoutlink.net/minecraft/ **
+
+F10 msg $active ** ScoutLink Minecraft server - Join us! This is a Minecraft server for all scouts in the entire world. Please do not break anything, be nice and most importantly, HAVE FUN! | /say Adress: minecraft.scoutlink.net  - Website: http://www.scoutlink.net/minecraft/ **
+
+F11 msg $active ** JID-koder er for et spill WOSM arrangerte under JOTA/JOTI før. En del speidere spiller det fremdeles, og mere informasjon om spillet finnes på http://jotajoti.no/2013/filer/jampuz.php :) **
+
+F12 msg $active ** Minecraft is lego construction in a virtual universe - here along with lots of scouts from around the world! The game is to build things, gather food and have fun with others. Minecraft costs 26.95 euros and can be purchased from http://minecraft.net. Watch https://www.youtube.com/watch?v=MmB9b5njVbA for trailer. **
