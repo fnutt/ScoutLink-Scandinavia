@@ -1,6 +1,6 @@
 On *:TEXT:Hi:?: {
   msg $nick Hello $nick . I normally dont reply to private messages. Try to talk in the channel, then more people can join in. Its more interesting.
-}
+}  | /closemsg ; denne kommandoen lukker meldingsvinduet automatisk når autosvar er sendt
 On *:TEXT:Hello:?: {
   msg $nick Hello $nick . I normally dont reply to private messages. Try to talk in the channel, then more people can join in. Its more interesting.
 }
