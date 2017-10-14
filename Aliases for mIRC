@@ -1,4 +1,6 @@
-F4 msg $active Dette er en kanal KUN for de som er chanop, ircop og +v for de skandinaviske kanalene. Vennligst ikke si at kanalen eksisterer til noen.
+F3 msg $active ** Vennligst ikke mas om JID-koder. Målet med kodene er å BLI KJENT med andre speidere - ikke bli fortest mulig ferdig. Les mer om spillet her:  http://jotajoti.info/jampuz/ . Det finnes også et nordisk puslespill. Les om dette på http://jotajoti.no/nordisk-jota-joti-puzzle/ :) **
+
+F4 msg $active ** JID-koder er til et spill WOSM arrangerer under JOTA/JOTI. Alle registrerte deltakergrupper har sin egen JID-kode. Vil du prøve? Besøk denne siden, les mer og last ned spillebrett:  http://jotajoti.info/jampuz/ . Det finnes også et nordisk puslespill. Les om dette på http://jotajoti.no/nordisk-jota-joti-puzzle/ :) **
 
 F5 msg $active Jeg har ikke tid til å snakke privat akkurat nå. Hvis du vil snakke med meg, vær vennlig og gjør det i en kanal. / I don't have time for private chat at the moment. If you want to chat with me, please do it in a channel. | /closemsg
 
@@ -12,6 +14,6 @@ F9 msg $active ** ScoutLink Minecraft server - Kom og spill! Serveren er åpen f
 
 F10 msg $active ** ScoutLink Minecraft server - Join us! This is a Minecraft server for all scouts in the entire world. Please do not break anything, be nice and most importantly, HAVE FUN! | /say Adress: minecraft.scoutlink.net  - Website: http://www.scoutlink.net/minecraft/ **
 
-F11 msg $active ** JID-koder er til et spill WOSM arrangerer under JOTA/JOTI. Alle registrerte deltakergrupper har sin egen JID-kode. Vil du prøve? Besøk denne siden, les mer og last ned spillebrett:  http://jotajoti.info/jampuz/ . Det finnes også et nordisk puslespill. Les om dette på http://jotajoti.no/nordisk-jota-joti-puzzle/ :) **
+F11 msg $active Dette er en kanal KUN for de som er chanop, ircop og +v for de skandinaviske kanalene. Vennligst ikke si at kanalen eksisterer til noen.
 
 F12 msg $active ** Minecraft is lego construction in a virtual universe - here along with lots of scouts from around the world! The game is to build things, gather food and have fun with others. Minecraft costs 26.95 euros and can be purchased from http://minecraft.net. Watch https://www.youtube.com/watch?v=MmB9b5njVbA for trailer. **
