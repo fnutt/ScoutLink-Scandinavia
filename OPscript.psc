@@ -1,4 +1,4 @@
-; ScanOPS OPscript v1.4-lillelykke for mIRC
+; ScanOPS OPscript v1.4 for mIRC
 
 menu nicklist {
   -
@@ -34,23 +34,23 @@ menu nicklist {
   ...Norsk  :/say $1 - ScoutLink er en speiderchat - IKKE et sted for å finne ny kjæreste
   ...Svensk :/say $1 - Scoutlink är en scout chat inte ett ställe att "datea" på!
   ..BadNick(PM)
-  ...Dansk  :/msg $1 Dit nick er upassende for ScoutLink. Venligst skift nick med kommandoen /nick nytnick .Skift nytnick med dit NYE nick.
-  ...Engelsk:/msg $1 Your nick is improper for ScoutLink. Please change it using the command /nick newnick .Change newnick with your NEW nick.
-  ...Norsk  :/msg $1 Ditt nick er upassende for ScoutLink. Vil du vennligst bytte nicket med kommandoen /nick nyttnick hvor du bytter ut nyttnick med ditt NYE nick.
-  ...Svensk :/msg $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta ditt nick med kommandona /nick nyttnick där du byter ut nyttnick med ditt NYA nick.
+  ...Dansk  :/msg $1 Dit nick er upassende for ScoutLink. Venligst skift nick med kommandoen/nick nytnick .Skiftnytnick med dit NYE nick.
+  ...Engelsk:/msg $1 Your nick is improper for ScoutLink. Please change it using the command/nick newnick .Changenewnick with your NEW nick.
+  ...Norsk  :/msg $1 Ditt nick er upassende for ScoutLink. Vil du vennligst bytte nicket med kommandoen/nick nyttnick hvor du bytter utnyttnick med ditt NYE nick.
+  ...Svensk :/msg $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta ditt nick med kommandona/nick nyttnick där du byter utnyttnick med ditt NYA nick.
   ..Wrong #channel
-  ...#english:/say $$1 - If you want to write in english, please /part $chan  and /join #english 
-  ...#espanol:/say $$1 - Por favor, si quieren hablar en espanol, se pone /part $chan  y /join #espanol 
-  ...#francais:/say $$1 - Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais  et /part $chan  pour utiliser le canal #francais . Merci!
-  ...Tysk:/say $$1 - Wenn du deutsch schreiben möchtest, bitte /part $chan  und /join #deutsch 
-  ...#portuguese:/say $$1 - Se você quer falar português, por favor digite /part $chan  e /join #portuguese 
-  ...#italiano:/say $$1 - Per favore se vuoi parlare italiano, por favore /part $chan  ed /join #italiano 
-  ...#scandinavia-dk:/say $$1 - Hvis du vil skrive på dansk, venligst skriv /part $chan  og /join #scandinavia 
-  ...#scandinavia-no:/say $$1 - Hvis du vil skrive på norsk, vennligst skriv /part $chan  og /join #scandinavia 
-  ...#scandinavia-se:/say $$1 - Om du vill prata svenska, vänligen skriv /join #scandinavia 
-  ...#chinese:/say $$1 - 如果你要说中文请你离开 /part $chan 然后在进入 /join #chinese 
-  ...Nederlandsk:/say $$1 - Als je nederlands wilt praten /part $chan  en /join #dutch 
-  ...#international:/say $$1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please /part $chan  and /join #international 
+  ...#english:/say $$1 - If you want to write in english, please/part $chan and/join #english
+  ...#espanol:/say $$1 - Por favor, si quieren hablar en espanol, se pone/part $chan y/join #espanol
+  ...#francais:/say $$1 - Pour communiquer en français, veuillez s'il vous plaît tapez/join #francais et/part $chan pour utiliser le canal #francais . Merci!
+  ...Tysk:/say $$1 - Wenn du deutsch schreiben möchtest, bitte/part $chan und/join #deutsch
+  ...#portuguese:/say $$1 - Se você quer falar português, por favor digite/part $chan e/join #portuguese
+  ...#italiano:/say $$1 - Per favore se vuoi parlare italiano, por favore/part $chan ed/join #italiano
+  ...#scandinavia-dk:/say $$1 - Hvis du vil skrive på dansk, venligst skriv/part $chan og/join #scandinavia
+  ...#scandinavia-no:/say $$1 - Hvis du vil skrive på norsk, vennligst skriv/part $chan og/join #scandinavia
+  ...#scandinavia-se:/say $$1 - Om du vill prata svenska, vänligen skriv/join #scandinavia
+  ...#chinese:/say $$1 - 如果你要说中文请你离开 /part $chan 然后在进入/join #chinese
+  ...Nederlandsk:/say $$1 - Als je nederlands wilt praten/part $chan en/join #dutch
+  ...#international:/say $$1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please/part $chan and/join #international
 
   .-
   .Kick
@@ -81,18 +81,18 @@ menu nicklist {
   ...Norsk  :/operserv kick $chan $1 Ditt nick er upassende. Vennligst skift det! ( %sluttekst )
   ...Svensk :/operserv kick $chan $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta det! ( %sluttekst )
   ..Wrong #channel
-  ...#english:/operserv kick $chan $1 - If you want to write in english, please /join #english 
-  ...#espanol:/operserv kick $chan $1 - Por favor, si quieren hablar en espanol, se pone /join #espanol 
-  ...#francais:/operserv kick $chan $1 - Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais  pour utiliser le canal #francais . Merci!
-  ...Tysk:/operserv kick $chan $1 - Wenn du deutsch schreiben möchtest, bitte /join #deutsch 
-  ...#portuguese:/operserv kick $chan $1 - Se você quer falar português, por favor digite /join #portuguese 
-  ...#italiano:/operserv kick $chan $1 - Per favore se vuoi parlare italiano, por favore /join #italiano 
-  ...#scandinavia-dk:/operserv kick $chan $1 - Hvis du vil skrive på dansk, venligst skriv /join #scandinavia 
-  ...#scandinavia-no:/operserv kick $chan $1 - Hvis du vil skrive på norsk, vennligst skriv /join #scandinavia 
-  ...#scandinavia-se:/operserv kick $chan $1 - Om du vill prata svenska, vänligen skriv /join #scandinavia 
-  ...#chinese:/operserv kick $chan $1 - 如果你要说中文请你 /join #chinese 
-  ...Nederlandsk:/operserv kick $chan $1 - Als je nederlands wilt praten /join #dutch 
-  ...#international:/operserv kick $chan $1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please /join #international 
+  ...#english:/operserv kick $chan $1 - If you want to write in english, please/join #english
+  ...#espanol:/operserv kick $chan $1 - Por favor, si quieren hablar en espanol, se pone/join #espanol
+  ...#francais:/operserv kick $chan $1 - Pour communiquer en français, veuillez s'il vous plaît tapez/join #francais pour utiliser le canal #francais . Merci!
+  ...Tysk:/operserv kick $chan $1 - Wenn du deutsch schreiben möchtest, bitte/join #deutsch
+  ...#portuguese:/operserv kick $chan $1 - Se você quer falar português, por favor digite/join #portuguese
+  ...#italiano:/operserv kick $chan $1 - Per favore se vuoi parlare italiano, por favore/join #italiano
+  ...#scandinavia-dk:/operserv kick $chan $1 - Hvis du vil skrive på dansk, venligst skriv/join #scandinavia
+  ...#scandinavia-no:/operserv kick $chan $1 - Hvis du vil skrive på norsk, vennligst skriv/join #scandinavia
+  ...#scandinavia-se:/operserv kick $chan $1 - Om du vill prata svenska, vänligen skriv/join #scandinavia
+  ...#chinese:/operserv kick $chan $1 - 如果你要说中文请你/join #chinese
+  ...Nederlandsk:/operserv kick $chan $1 - Als je nederlands wilt praten/join #dutch
+  ...#international:/operserv kick $chan $1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please/join #international
   ..OtherReason:/set %aarsak $$?="Reason:" | /operserv kick $chan $1 %aarsak ( %sluttekst )
 
   .-
@@ -249,23 +249,23 @@ menu nicklist {
   ...Norsk  :/say $1 - ScoutLink er en speiderchat - IKKE et sted for å finne ny kjæreste
   ...Svensk :/say $1 - Scoutlink är en scout chat inte ett ställe att "datea" på!
   ..BadNick(PM)
-  ...Dansk  :/msg $1 Dit nick er upassende for ScoutLink. Venligst skift nick med kommandoen /nick nytnick .Skift nytnick med dit NYE nick.
-  ...Engelsk:/msg $1 Your nick is improper for ScoutLink. Please change it using the command /nick newnick .Change newnick with your NEW nick.
-  ...Norsk  :/msg $1 Ditt nick er upassende for ScoutLink. Vil du vennligst bytte nicket med kommandoen /nick nyttnick hvor du bytter ut nyttnick med ditt NYE nick.
-  ...Svensk :/msg $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta ditt nick med kommandona /nick nyttnick där du byter ut nyttnick med ditt NYA nick.
+  ...Dansk  :/msg $1 Dit nick er upassende for ScoutLink. Venligst skift nick med kommandoen/nick nytnick .Skiftnytnick med dit NYE nick.
+  ...Engelsk:/msg $1 Your nick is improper for ScoutLink. Please change it using the command/nick newnick .Changenewnick with your NEW nick.
+  ...Norsk  :/msg $1 Ditt nick er upassende for ScoutLink. Vil du vennligst bytte nicket med kommandoen/nick nyttnick hvor du bytter utnyttnick med ditt NYE nick.
+  ...Svensk :/msg $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta ditt nick med kommandona/nick nyttnick där du byter utnyttnick med ditt NYA nick.
   ..Wrong #channel
-  ...#english:/say $$1 - If you want to write in english, please /part $chan  and /join #english 
-  ...#espanol:/say $$1 - Por favor, si quieren hablar en espanol, se pone /part $chan  y /join #espanol 
-  ...#francais:/say $$1 - Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais  et /part $chan  pour utiliser le canal #francais . Merci!
-  ...Tysk:/say $$1 - Wenn du deutsch sprechen möchtest, bitte /part $chan  und /join #deutsch 
-  ...#portuguese:/say $$1 - Se você quer falar português, por favor digite /part $chan  e /join #portuguese 
-  ...#italiano:/say $$1 - Per favore se vuoi parlare italiano, por favore /part $chan  ed /join #italiano 
-  ...#scandinavia-dk:/say $$1 - Hvis du vil skrive på dansk, venligst skriv /part $chan  og /join #scandinavia   
-  ...#scandinavia-no:/say $$1 - Hvis du vil skrive på norsk, vennligst skriv /part $chan  og /join #scandinavia 
-  ...#scandinavia-se:/say $$1 - Om du vill prata svenska, vänligen skriv /join #scandinavia 
-  ...#chinese:/say $$1 - 如果你要说中文请你离开 /part $chan 然后在进入 /join #chinese 
-  ...Nederlandsk:/say $$1 - Als je nederlands wilt praten /part $chan  en /join #dutch 
-  ...#international:/say $$1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please /part $chan  and /join #international 
+  ...#english:/say $$1 - If you want to write in english, please/part $chan and/join #english
+  ...#espanol:/say $$1 - Por favor, si quieren hablar en espanol, se pone/part $chan y/join #espanol
+  ...#francais:/say $$1 - Pour communiquer en français, veuillez s'il vous plaît tapez/join #francais et/part $chan pour utiliser le canal #francais . Merci!
+  ...Tysk:/say $$1 - Wenn du deutsch sprechen möchtest, bitte/part $chan und/join #deutsch
+  ...#portuguese:/say $$1 - Se você quer falar português, por favor digite/part $chan e/join #portuguese
+  ...#italiano:/say $$1 - Per favore se vuoi parlare italiano, por favore/part $chan ed/join #italiano
+  ...#scandinavia-dk:/say $$1 - Hvis du vil skrive på dansk, venligst skriv/part $chan og/join #scandinavia  
+  ...#scandinavia-no:/say $$1 - Hvis du vil skrive på norsk, vennligst skriv/part $chan og/join #scandinavia
+  ...#scandinavia-se:/say $$1 - Om du vill prata svenska, vänligen skriv/join #scandinavia
+  ...#chinese:/say $$1 - 如果你要说中文请你离开 /part $chan 然后在进入/join #chinese
+  ...Nederlandsk:/say $$1 - Als je nederlands wilt praten/part $chan en/join #dutch
+  ...#international:/say $$1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please/part $chan and/join #international
 
   .-
   .Kick
@@ -295,18 +295,18 @@ menu nicklist {
   ...Norsk  :/operserv kick $chan $1 Ditt nick er upassende. Vennligst skift det! ( %sluttekst )
   ...Svensk :/operserv kick $chan $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta det! ( %sluttekst )
   ..Wrong #channel
-  ...#english:/operserv kick $chan $1 - If you want to write in english, please /join #english 
-  ...#espanol:/operserv kick $chan $1 - Por favor, si quieren hablar en espanol, se pone /join #espanol 
-  ...#francais:/operserv kick $chan $1 - Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais  pour utiliser le canal #francais . Merci!
-  ...Tysk:/operserv kick $chan $1 - Wenn du deutsch schreiben möchtest, bitte /join #deutsch 
-  ...#portuguese:/operserv kick $chan $1 - Se você quer falar português, por favor digite /join #portuguese 
-  ...#italiano:/operserv kick $chan $1 - Per favore se vuoi parlare italiano, por favore /part $chan  ed /join #italiano 
-  ...#scandinavia-dk:/operserv kick $chan $1 - Hvis du vil skrive på dansk, venligst skriv /join #scandinavia 
-  ...#scandinavia-no:/operserv kick $chan $1 - Hvis du vil skrive på norsk, vennligst skriv /join #scandinavia 
-  ...#scandinavia-se:/operserv kick $chan $1 - Om du vill prata svenska, vänligen skriv /join #scandinavia 
-  ...#chinese:/operserv kick $chan $1 - 如果你要说中文请你 /join #chinese 
-  ...Nederlandsk:/operserv kick $chan $1 - Als je nederlands wilt praten /join #dutch 
-  ...#international:/operserv kick $chan $1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please /join #international 
+  ...#english:/operserv kick $chan $1 - If you want to write in english, please/join #english
+  ...#espanol:/operserv kick $chan $1 - Por favor, si quieren hablar en espanol, se pone/join #espanol
+  ...#francais:/operserv kick $chan $1 - Pour communiquer en français, veuillez s'il vous plaît tapez/join #francais pour utiliser le canal #francais . Merci!
+  ...Tysk:/operserv kick $chan $1 - Wenn du deutsch schreiben möchtest, bitte/join #deutsch
+  ...#portuguese:/operserv kick $chan $1 - Se você quer falar português, por favor digite/join #portuguese
+  ...#italiano:/operserv kick $chan $1 - Per favore se vuoi parlare italiano, por favore/part $chan ed/join #italiano
+  ...#scandinavia-dk:/operserv kick $chan $1 - Hvis du vil skrive på dansk, venligst skriv/join #scandinavia
+  ...#scandinavia-no:/operserv kick $chan $1 - Hvis du vil skrive på norsk, vennligst skriv/join #scandinavia
+  ...#scandinavia-se:/operserv kick $chan $1 - Om du vill prata svenska, vänligen skriv/join #scandinavia
+  ...#chinese:/operserv kick $chan $1 - 如果你要说中文请你/join #chinese
+  ...Nederlandsk:/operserv kick $chan $1 - Als je nederlands wilt praten/join #dutch
+  ...#international:/operserv kick $chan $1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please/join #international
   ..OtherReason:/set %aarsak $$?="Reason:" | /operserv kick $chan $1 %aarsak ( %sluttekst )
 
   .-
@@ -451,23 +451,23 @@ menu nicklist {
   ...Norsk  :/say $1 - ScoutLink er en speiderchat - IKKE et sted for å finne ny kjæreste
   ...Svensk :/say $1 - Scoutlink är en scout chat inte ett ställe att "datea" på!
   ..BadNick(PM)
-  ...Dansk  :/msg $1 Dit nick er upassende for ScoutLink. Venligst skift nick med kommandoen /nick nytnick .Skift nytnick med dit NYE nick.
-  ...Engelsk:/msg $1 Your nick is improper for ScoutLink. Please change it using the command /nick newnick .Change newnick with your NEW nick.
-  ...Norsk  :/msg $1 Ditt nick er upassende for ScoutLink. Vil du vennligst bytte nicket med kommandoen /nick nyttnick hvor du bytter ut nyttnick med ditt NYE nick.
-  ...Svensk :/msg $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta ditt nick med kommandona /nick nyttnick där du byter ut nyttnick med ditt NYA nick.
+  ...Dansk  :/msg $1 Dit nick er upassende for ScoutLink. Venligst skift nick med kommandoen/nick nytnick .Skiftnytnick med dit NYE nick.
+  ...Engelsk:/msg $1 Your nick is improper for ScoutLink. Please change it using the command/nick newnick .Changenewnick with your NEW nick.
+  ...Norsk  :/msg $1 Ditt nick er upassende for ScoutLink. Vil du vennligst bytte nicket med kommandoen/nick nyttnick hvor du bytter utnyttnick med ditt NYE nick.
+  ...Svensk :/msg $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta ditt nick med kommandona/nick nyttnick där du byter utnyttnick med ditt NYA nick.
   ..Wrong #channel
-  ...#english:/say $$1 - If you want to write in english, please /part $chan  and /join #english 
-  ...#espanol:/say $$1 - Por favor, si quieren hablar en espanol, se pone /part $chan  y /join #espanol 
-  ...#francais:/say $$1 - Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais  et /part $chan  pour utiliser le canal #francais . Merci!
-  ...Tysk:/say $$1 - Wenn du deutsch schreiben möchtest, bitte /part $chan  und /join #deutsch 
-  ...#portuguese:/say $$1 - Se você quer falar português, por favor digite /part $chan  e /join #portuguese 
-  ...#italiano:/say $$1 - Per favore se vuoi parlare italiano, por favore /part $chan  ed /join #italiano 
-  ...#scandinavia-dk:/say $$1 - Hvis du vil skrive på dansk, venligst skriv /part $chan  og /join #scandinavia     
-  ...#scandinavia-no:/say $$1 - Hvis du vil skrive på norsk, vennligst skriv /part $chan  og /join #scandinavia 
-  ...#scandinavia-se:/say $$1 - Om du vill prata svenska, vänligen skriv /join #scandinavia 
-  ...#chinese:/say $$1 - 如果你要说中文请你离开 /part $chan 然后在进入 /join #chinese 
-  ...Nederlandsk:/say $$1 - Als je nederlands wilt praten /part $chan  en /join #dutch 
-  ...#international:/say $$1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please /part $chan  and /join #international 
+  ...#english:/say $$1 - If you want to write in english, please/part $chan and/join #english
+  ...#espanol:/say $$1 - Por favor, si quieren hablar en espanol, se pone/part $chan y/join #espanol
+  ...#francais:/say $$1 - Pour communiquer en français, veuillez s'il vous plaît tapez/join #francais et/part $chan pour utiliser le canal #francais . Merci!
+  ...Tysk:/say $$1 - Wenn du deutsch schreiben möchtest, bitte/part $chan und/join #deutsch
+  ...#portuguese:/say $$1 - Se você quer falar português, por favor digite/part $chan e/join #portuguese
+  ...#italiano:/say $$1 - Per favore se vuoi parlare italiano, por favore/part $chan ed/join #italiano
+  ...#scandinavia-dk:/say $$1 - Hvis du vil skrive på dansk, venligst skriv/part $chan og/join #scandinavia    
+  ...#scandinavia-no:/say $$1 - Hvis du vil skrive på norsk, vennligst skriv/part $chan og/join #scandinavia
+  ...#scandinavia-se:/say $$1 - Om du vill prata svenska, vänligen skriv/join #scandinavia
+  ...#chinese:/say $$1 - 如果你要说中文请你离开 /part $chan 然后在进入/join #chinese
+  ...Nederlandsk:/say $$1 - Als je nederlands wilt praten/part $chan en/join #dutch
+  ...#international:/say $$1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please/part $chan and/join #international
 
   .-
   .Kick
@@ -498,18 +498,18 @@ menu nicklist {
   ...Norsk  :/chanserv kick $chan $1 Ditt nick er upassende. Vennligst skift det! ( %sluttekst )
   ...Svensk :/chanserv kick $chan $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta det! ( %sluttekst )
   ..Wrong #channel
-  ...#english:/chanserv kick $chan $1 - If you want to write in english, please /join #english 
-  ...#espanol:/chanserv kick $chan $1 - Por favor, si quieren hablar en espanol, se pone /join #espanol 
-  ...#francais:/chanserv kick $chan $1 - Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais  pour utiliser le canal #francais . Merci!
-  ...Tysk:/chanserv kick $chan $1 - Wenn du deutsch schreiben möchtest, bitte /join #deutsch 
-  ...#portuguese:/chanserv kick $chan $1 - Se você quer falar português, por favor digite /join #portuguese 
-  ...#italiano:/chanserv kick $chan $1 - Per favore se vuoi parlare italiano, por favore /join #italiano 
-  ...#scandinavia-dk:/chanserv kick $chan $1 - Hvis du vil skrive på dansk, venligst skriv /join #scandinavia 
-  ...#scandinavia-no:/chanserv kick $chan $1 - Hvis du vil skrive på norsk, vennligst skriv /join #scandinavia 
-  ...#scandinavia-se:/chanserv kick $chan $1 - Om du vill prata svenska, vänligen skriv /join #scandinavia 
-  ...#chinese:/chanserv kick $chan $1 - 如果你要说中文请你 /join #chinese 
-  ...Nederlandsk:/chanserv kick $chan $1 - Als je nederlands wilt praten /join #dutch 
-  ...#international:/chanserv kick $chan $1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please /join #international 
+  ...#english:/chanserv kick $chan $1 - If you want to write in english, please/join #english
+  ...#espanol:/chanserv kick $chan $1 - Por favor, si quieren hablar en espanol, se pone/join #espanol
+  ...#francais:/chanserv kick $chan $1 - Pour communiquer en français, veuillez s'il vous plaît tapez/join #francais pour utiliser le canal #francais . Merci!
+  ...Tysk:/chanserv kick $chan $1 - Wenn du deutsch schreiben möchtest, bitte/join #deutsch
+  ...#portuguese:/chanserv kick $chan $1 - Se você quer falar português, por favor digite/join #portuguese
+  ...#italiano:/chanserv kick $chan $1 - Per favore se vuoi parlare italiano, por favore/join #italiano
+  ...#scandinavia-dk:/chanserv kick $chan $1 - Hvis du vil skrive på dansk, venligst skriv/join #scandinavia
+  ...#scandinavia-no:/chanserv kick $chan $1 - Hvis du vil skrive på norsk, vennligst skriv/join #scandinavia
+  ...#scandinavia-se:/chanserv kick $chan $1 - Om du vill prata svenska, vänligen skriv/join #scandinavia
+  ...#chinese:/chanserv kick $chan $1 - 如果你要说中文请你/join #chinese
+  ...Nederlandsk:/chanserv kick $chan $1 - Als je nederlands wilt praten/join #dutch
+  ...#international:/chanserv kick $chan $1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please/join #international
   ..OtherReason:/set %aarsak $$?="Reason:" | /chanserv kick $chan $1 %aarsak ( %sluttekst )
 
   .-
@@ -616,23 +616,23 @@ menu nicklist {
   ...Norsk  :/say $1 - ScoutLink er en speiderchat - IKKE et sted for å finne ny kjæreste
   ...Svensk :/say $1 - Scoutlink är en scout chat inte ett ställe att "datea" på!
   ..BadNick(PM)
-  ...Dansk  :/msg $1 Dit nick er upassende for ScoutLink. Venligst skift nick med kommandoen /nick nytnick .Skift nytnick med dit NYE nick.
-  ...Engelsk:/msg $1 Your nick is improper for ScoutLink. Please change it using the command /nick newnick .Change newnick with your NEW nick.
-  ...Norsk  :/msg $1 Ditt nick er upassende for ScoutLink. Vil du vennligst bytte nicket med kommandoen /nick nyttnick hvor du bytter ut nyttnick med ditt NYE nick.
-  ...Svensk :/msg $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta ditt nick med kommandona /nick nyttnick där du byter ut nyttnick med ditt NYA nick.
+  ...Dansk  :/msg $1 Dit nick er upassende for ScoutLink. Venligst skift nick med kommandoen/nick nytnick .Skiftnytnick med dit NYE nick.
+  ...Engelsk:/msg $1 Your nick is improper for ScoutLink. Please change it using the command/nick newnick .Changenewnick with your NEW nick.
+  ...Norsk  :/msg $1 Ditt nick er upassende for ScoutLink. Vil du vennligst bytte nicket med kommandoen/nick nyttnick hvor du bytter utnyttnick med ditt NYE nick.
+  ...Svensk :/msg $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta ditt nick med kommandona/nick nyttnick där du byter utnyttnick med ditt NYA nick.
   ../join #channel
-  ...#english:/say $$1 - If you want to write in English, please /part $chan  and /join #english .
-  ...#espanol:/say $$1 - Por favor, si quieren hablar en espanol, se pone /part $chan  y /join #espanol .
-  ...#francais:/say $$1 - Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais  et /part $chan  pour utiliser le canal #francais . Merci!
-  ...Tysk:/say $$1 - Wenn du deutsch schreiben möchtest, bitte /part $chan  und /join #deutsch 
-  ...#portuguese:/say $$1 - Se você quer falar português, por favor digite /part $chan  e /join #portuguese 
-  ...#italiano:/say $$1 - Per favore se vuoi parlare italiano, por favore /part $chan  ed /join #italiano 
-  ...#scandinavia-dk:/say $$1 - Hvis du vil skrive på dansk, venligst skriv /part $chan  og /join #scandinavia   
-  ...#scandinavia-no:/say $$1 - Hvis du vil skrive på norsk, vennligst skriv /part $chan  og /join #scandinavia 
+  ...#english:/say $$1 - If you want to write in English, please/part $chan and/join #english.
+  ...#espanol:/say $$1 - Por favor, si quieren hablar en espanol, se pone/part $chan y/join #espanol.
+  ...#francais:/say $$1 - Pour communiquer en français, veuillez s'il vous plaît tapez/join #francais et/part $chan pour utiliser le canal #francais . Merci!
+  ...Tysk:/say $$1 - Wenn du deutsch schreiben möchtest, bitte/part $chan und/join #deutsch
+  ...#portuguese:/say $$1 - Se você quer falar português, por favor digite/part $chan e/join #portuguese
+  ...#italiano:/say $$1 - Per favore se vuoi parlare italiano, por favore/part $chan ed/join #italiano
+  ...#scandinavia-dk:/say $$1 - Hvis du vil skrive på dansk, venligst skriv/part $chan og/join #scandinavia  
+  ...#scandinavia-no:/say $$1 - Hvis du vil skrive på norsk, vennligst skriv/part $chan og/join #scandinavia
   ...#scandinavia-se:/say $$1 - Om du vill prata svenska, lämna $chan och anslut till #scandinavia
   ...#chinese:/say $$1 - 如果你要说中文请你离开 /part $chan 然后在进入 /join #chinese
-  ...Nederlandsk:/say $$1 - Als je nederlands wilt praten /part $chan  en /join #dutch 
-  ...#international:/say $$1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please /part $chan  and /join #international 
+  ...Nederlandsk:/say $$1 - Als je nederlands wilt praten/part $chan en/join #dutch
+  ...#international:/say $$1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please/part $chan and/join #international
 
   .-
   .Kick
@@ -648,7 +648,7 @@ menu nicklist {
   ...Svensk :/chanserv kick $chan $1 Översämma inte kanalen med skit (bara strunt prat) ( %sluttekst )
   ..CapsLock
   ...Dansk :/operserv kick $chan $1 Vær venlig ikke at benytte store bogstaver! Det betegnes som råben! ( %sluttekst )
-  ...Engelsk:/chanserv kick $chan $1 Don't use capital letters! -  it's considered as SHOUTING! ( %sluttekst )
+  ...Engelsk:/chanserv kick $chan $1 Don't use capital letters! - it's considered as SHOUTING! ( %sluttekst )
   ...Norsk  :/chanserv kick $chan $1 Ikke bruk store bokstaver! Det regnes som ROPING! ( %sluttekst )
   ...Svensk :/chanserv kick $chan $1 Använd inte stora bokstäver det anses som att skrika ( %sluttekst )
   ..Dating
@@ -662,18 +662,18 @@ menu nicklist {
   ...Norsk  :/chanserv kick $chan $1 Ditt nick er upassende. Vennligst skift det! ( %sluttekst )
   ...Svensk :/chanserv kick $chan $1 Ditt nick är opassande för ScoutLink. Vill du vänlien byta det! ( %sluttekst )
   ..Wrong #channel
-  ...#english:/chanserv kick $chan $1 - If you want to write in English, please /part $chan  and /join #english .
-  ...#espanol:/chanserv kick $chan $1 - Por favor, si quieren hablar en espanol, se pone /part $chan  y /join #espanol .
-  ...#francais:/chanserv kick $chan $1 - Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais  et /part $chan  pour utiliser le canal #francais . Merci!
-  ...Tysk:/chanserv kick $chan $1 - Wenn du deutsch schreiben möchtest, bitte /part $chan  und /join #deutsch 
-  ...#portuguese:/chanserv kick $chan $1 - Se você quer falar português, por favor digite /part $chan  e /join #portuguese 
-  ...#italiano:/chanserv kick $chan $1 - Per favore se vuoi parlare italiano, por favore /part $chan  ed /join #italiano 
-  ...#scandinavia-dk:/chanserv kick $chan $1 - Hvis du vil skrive på dansk, venligst skriv /part $chan  og /join #scandinavia 
-  ...#scandinavia-no:/chanserv kick $chan $1 - Hvis du vil skrive på norsk, vennligst skriv /part $chan  og /join #scandinavia 
+  ...#english:/chanserv kick $chan $1 - If you want to write in English, please/part $chan and/join #english.
+  ...#espanol:/chanserv kick $chan $1 - Por favor, si quieren hablar en espanol, se pone/part $chan y/join #espanol.
+  ...#francais:/chanserv kick $chan $1 - Pour communiquer en français, veuillez s'il vous plaît tapez/join #francais et/part $chan pour utiliser le canal #francais . Merci!
+  ...Tysk:/chanserv kick $chan $1 - Wenn du deutsch schreiben möchtest, bitte/part $chan und/join #deutsch
+  ...#portuguese:/chanserv kick $chan $1 - Se você quer falar português, por favor digite/part $chan e/join #portuguese
+  ...#italiano:/chanserv kick $chan $1 - Per favore se vuoi parlare italiano, por favore/part $chan ed/join #italiano
+  ...#scandinavia-dk:/chanserv kick $chan $1 - Hvis du vil skrive på dansk, venligst skriv/part $chan og/join #scandinavia
+  ...#scandinavia-no:/chanserv kick $chan $1 - Hvis du vil skrive på norsk, vennligst skriv/part $chan og/join #scandinavia
   ...#scandinavia-se:/chanserv kick $chan $1 - Om du vill prata svenska, lämna $chan och anslut till #scandinavia
   ...#chinese:/chanserv kick $chan $1 - 如果你要说中文请你离开 /part $chan 然后在进入 /join #chinese
-  ...Nederlandsk:/chanserv kick $chan $1 - Als je nederlands wilt praten /part $chan  en /join #dutch 
-  ...#international:/chanserv kick $chan $1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please /part $chan  and /join #international 
+  ...Nederlandsk:/chanserv kick $chan $1 - Als je nederlands wilt praten/part $chan en/join #dutch
+  ...#international:/chanserv kick $chan $1 - The only language allowed in $chan is norwegian, danish and swedish. If you want to chat in any other language, please/part $chan and/join #international
   ..OtherReason:/set %aarsak $$?="Reason:" | /chanserv kick $chan $1 %aarsak ( %sluttekst )
 
   .-
