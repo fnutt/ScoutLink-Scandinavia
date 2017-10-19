@@ -1,0 +1,65 @@
+; Alt er på engelsk. Norsk versjon kommer senere.
+
+# OPERSERV
+Op: /operserv mode <channel> +o <nickname>
+Deop: /operserv mode <channel> -o <nickname>
+Admin: /operserv mode <channel> +a <nickname>
+De-admin: /operserv mode <channel> -a <nickname>
+Voice: /operserv mode <channel> +v <nickname>
+Devoice: /operserv mode <channel> -v <nickname>
+
+Kick: /operserv kick <channel> <nickname> <reason>
+Ban: /operserv mode <channel> +b <hostmask>
+
+
+# SA
+Force part: /sapart <nick> <channel> <reason>
+Force join: /sajoin <nick> <channel>
+Force nickchange: /sanick <nick> <new nick>
+Kick: /sakick <nick> <channel> <reason>
+
+
+# GET INFORMATION ABOUT USER
+Look after someone with same hostmask: /check <nick/hostmask>
+
+Information about user: /whois <nick>
+More information about user: /whois info <nick>
+
+IP of user: /userip <nick>
+
+NickServ information about user: /nickserv info <nick>
+
+What irc-client: /ctcp <nick> version
+What time user got: /ctcp <nick> time
+How long ping use: /ctcp <nick> ping
+
+
+# OP/DEOP
+/mode <channel> +o <nick>
+/mode <channel> -o <nick>
+
+
+# SEND OUT MESSAGE
+Send out a message on all chats I'm on: /ame <message>
+Send out message to everyone everywhere: /global 
+
+
+# OPER LOGIN/OUTLOG
+Log in as ircop: /oper <username> <password>
+Log out as ircop: /mode <nickname> -o
+
+
+# JOIN CHANNEL OVERRIDE
+Join channel with override: /join <channel> override
+
+
+# OFTEN USED COMMANDS WHICH DOES NOT REQUIRE CHANSERV RIGHTS
+Kick: /kick <channel> <nick> <reason>
+KILL: /kill <nickname> <reason>
+GLINE: /gline <hostmask> <duration>: <reason>
+Ban with time: /tban <channel> <duration> <hostmask>
+Prevent nick changes: /mode #<channel> +b N:<hostmask>
+
+
+# DIVERSE
+/chanserv set <channel> mlock off
