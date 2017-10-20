@@ -1,0 +1,90 @@
+menu nicklist {
+  -
+  ; IRC-UK opped
+  $iif(o isin $usermode && $me isop $chan, @Ircop ( $1 ))
+  Check:/check $mask($$1,2)
+  Join:/sajoin $* $$?="Move to:"
+  Part:/sapart $* # Moved by $me
+  Aktiviser
+  .Aktivitet:/say $* , hva synes du er den aller artigste speideraktiviteten?
+  .Tur:/say $* , når var du sist på speidertur? :)
+  .Mat:/say $* , hva er din favorittmat?
+  .Turmat:/say $* , hva er det beste du har smakt som du har laget på bål?
+  .Merke:/say $* , hvilket aktivitetsmerke er ditt favorittmerke?
+  .Lek:/say $* , hvilken lek er din favorittlek i speideren?
+  .Jobb:/say $* , hva har du lyst å jobbe med når du blir stor?
+  .Leir:/say $* , har du vært på noen speiderleirer? Hva er det beste med å være på leir?
+  Engage
+  .Activity:/say $* , what is your favourite Scouting activity? Mines are camp fire and geocaching!
+  .Camping:/say $* , when did you last go camping? :)
+  .Food:/say $* , what is your favourite food?
+  .Badge:/say $* , what is your favourite Scout badge? Mine is campfire cooking
+  .Games:/say $* , what is your favourite game to play at Scouts?
+  .Job:/say $* , what job do you want to do when you're older?
+
+
+  Swear
+  .UK Warn:/say $* - Please avoid using offensive language and/or swearing while on ScoutLink. See www.scoutlink.net/rules!
+  .NO Warn:/say $* - Vennligst ikke bruk aggresivt, ufint eller stygt språk. Banning er heller ikke tillatt på ScoutLink. Se www.scoutlink.net/rules!
+  .UK Kick:/kick # $* Offensive language and/or swearing. See www.scoutlink.net/rules
+  .NO Kick:/kick # $* Stygt språk og/eller banning. Se www.scoutlink.net/rules
+  .UK Kill:/kill  $* Offensive language and/or swearing. See www.scoutlink.net/rules
+  .NO Kill:/kill  $* Stygt språk og/eller banning. Se www.scoutlink.net/rules
+  .Gline 5m:/gline $$snick(#,1) 5m :Offensive language and/or swearing. See www.scoutlink.net/banned for information and appeals. Banned by $me for 5 minutes.
+  .Gline 15m:/gline $$snick(#,1) 15m :Offensive language and/or swearing. See www.scoutlink.net/banned for information and appeals. Banned by $me for 15 minutes.
+  .Gline 1d:/gline $$snick(#,1) 1d :Offensive language and/or swearing. See www.scoutlink.net/banned for information and appeals. Banned by $me for 1 day.
+  .Gline ?:/gline $$snick(#,1) $$?="Please choose a duration" Offensive language and/or swearing. See www.scoutlink.net/banned for information and appeals. Banned by $me for $!
+  Flood
+  .UK Warn:/say $* - Please avoid flooding/spamming the channel. See www.scoutlink.net/rules
+  .NO Warn:/say $* - Vennligst ikke skriv tull (spam) eller mange gjentakelser etter hverandre (flood). Se www.scoutlink.net/rules!
+  .Kick:/kick # $* Flooding/Spamming. See www.scoutlink.net/rules
+  .Kill:/kill $* Flooding/Spamming. See www.scoutlink.net/rules
+  .Gline 5m:/gline $$snick(#,1) 5m : Flooding/Spamming. See www.scoutlink.net/banned for information and appeals. Banned by $me for 5 minutes.
+  .Gline 15m:/gline $$snick(#,1) 15m : Flooding/Spamming. See www.scoutlink.net/banned for information and appeals. Banned by $me for 15 minutes.
+  .Gline 1d:/gline $$snick(#,1) 1d : Flooding/Spamming. See www.scoutlink.net/banned for information and appeals. Banned by $me for 1 day.
+  .Gline ?:/gline $$snick(#,1) $$?="Please choose a duration" :Flooding/Spamming. See www.scoutlink.net/banned for information and appeals. Banned by $me for $!
+  Personal Info
+  .UK Warn:/say $* - Please avoid sharing or asking for personal information (e.g. email address, full name, Facebook, instagram, snapchat, skype, school). See www.scoutlink.net/rules
+  .NO Warn:/say $* - Unngå å del eller spør etter personlig informasjon (Eks.: etternavn, epostadresse, eller sosiale medier som Facebook, instagram, snapchat, skype og så videre). Se www.scoutlink.net/rules
+  .UK Kick:/kick # $* Please avoid sharing or asking for personal information (e.g. email address, full name, Facebook, instagram, snapchat, skype, school). See www.scoutlink.net/rules
+  .NO Kick:/kick # $* Unngå å del eller spør etter personlig informasjon (Eks.: etternavn, epostadresse, eller sosiale medier som Facebook, instagram, snapchat, skype og så videre). Se www.scoutlink.net/rules
+  .Kill:/kill $* Sharing/asking for personal information (e.g. email address, full name, Facebook, instagram, skype, school) See www.scoutlink.net/rules
+  .Gline 5m:/gline $$snick(#,1) 5m :Sharing/asking for personal information (e.g. email address, full name, Facebook, instagram, snapchat, skype, school) See www.scoutlink.net/banned for information and appeals. Banned by $me for 5 minutes.
+  .Gline 15m:/gline $$snick(#,1) 15m :Sharing/asking for personal information (e.g. email address, full name, Facebook, instagram, snapchat, skype, school) See www.scoutlink.net/banned for information and appeals. Banned by $me for 15 minutes.
+  .Gline 1d:/gline $$snick(#,1) 1d :Sharing/asking for personal information (e.g. email address, full name, Facebook, instagram, snapchat, skype, school) See www.scoutlink.net/banned for information and appeals. Banned by $me for 1 day.
+  .Gline ?:/gline $$snick(#,1) $$?="Please choose a duration" :Sharing/asking for personal information (e.g. email address, full name, Facebook, instagram, snapchat, skype, school) See www.scoutlink.net/banned for information and appeals. Banned by $me for $!
+  Other
+  .Warn:/say $* - $$?="Please enter a reason" See www.scoutlink.net/rules
+  .Kick:/kick # $* $$?="Please enter a reason" See www.scoutlink.net/rules
+  .Kill:/kill # $* $$?="Please enter a reason" See www.scoutlink.net/rules
+  .Gline 5m:/gline $$snick(#,1) 5m : $$?="Please enter a reason". See www.scoutlink.net/banned for information and appeals. Banned by $me for 5 minutes.
+  .Gline 15m:/gline $$snick(#,1) 15m : $$?="Please enter a reason". See www.scoutlink.net/banned for information and appeals. Banned by $me for 15 minutes.
+  .Gline 1d:/gline $$snick(#,1) 1d : $$?="Please enter a reason". See www.scoutlink.net/banned for information and appeals. Banned by $me for 1 day.
+
+  Language
+  .UK Warn:/say $* - This is an ENGLISH ONLY channel. Please speak english or find another channel. Type /list to see alternatives.
+  .NO Warn:/say $* - This is an SCANDIAVIAN LANGUAGE ONLY channel. Please join #english if you want to speak english. Type /list to see alternatives.
+  .UK Kick:/kick # $* - This is an ENGLISH ONLY channel. Please speak english or find another channel. 
+  .NO Kick:/kick # $* - This is an SCANDIAVIAN LANGUAGE ONLY channel. Please join #english if you want to speak english. Type /list to see alternatives.
+  .UK Kill:/kill  $* - This is an ENGLISH ONLY channel. Please speak english or find another channel. 
+  .NO Kill:/kill  $* - This is an SCANDIAVIAN LANGUAGE ONLY channel. Please join #english if you want to speak english. Type /list to see alternatives.
+  JID
+  .UK Warn:/say $* - PLEASE DO NOT JUST ASK/SHARE JID-CODES! JamPuz is about conversation; not simply contacts. Read this before asking for JIDs: www.world-jotajoti.info/jampuz/
+  .NO Warn:/say $* - Vær så snill og ikke bare spør/del JID-koder! JamPuz handler om å bli kjent, ikke bare samle koder. Les dette for mer informasjon om spillet: www.world-jotajoti.info/jampuz/
+  .UK Kick:/kick # $* - PLEASE DO NOT JUST ASK/SHARE JID-CODES! JamPuz is about conversation; not simply contacts. Read this before asking for JIDs: www.world-jotajoti.info/jampuz/   
+  .NO Kick:/kick # $* - Vær så snill og ikke bare spør/del JID-koder! JamPuz handler om å bli kjent, ikke bare samle koder. Les dette for mer informasjon om spillet: www.world-jotajoti.info/jampuz/
+  .UK Kill:/kill  $*  - PLEASE DO NOT JUST ASK/SHARE JID-CODES! JamPuz is about conversation; not simply contacts. Read this before asking for JIDs: www.world-jotajoti.info/jampuz/
+  .NO Kill:/kill  $* - Vær så snill og ikke bare spør/del JID-koder! JamPuz handler om å bli kjent, ikke bare samle koder. Les dette for mer informasjon om spillet: www.world-jotajoti.info/jampuz/
+
+
+
+
+  Access
+  .Op:/mode # +o $* 
+  .Deop:/mode # -o $*
+  .Voice:/mode # +v $*
+  .Devoice:/mode # -v $*
+
+
+}
+
