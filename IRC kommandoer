@@ -1,3 +1,7 @@
+HOSTMASK = Kallenavn!brukernavn@hostname
+
+---
+
 # OPER LOGIN/UTLOGGING
 Log inn som IRCOP: /oper <username> <password>
 Log ut som IRCOP: /mode <nickname> -o
@@ -12,36 +16,41 @@ OP i en kanal: /mode <channel> +o <nick>
 DeOP i en kanal: /mode <channel> -o <nick>
 
 
-# FÅ INFORMASJON OM BRUKER
-Se etter noen med samme hostmask: /check <nick/hostmask>
-Informasjon om bruker: /whois <nick>
-Mer informasjon om bruker /whois info <nick>
-IP til bruker: /userip <nick>
-NickServ informasjon om bruker: /nickserv info <nick>
-IRC-klient brukeren bruker: /ctcp <nick> version
-Tiden brukeren har: /ctcp <nick> time
-Pingen mellom deg og brukeren: /ctcp <nick> ping
+# FÅ INFORMASJON OM EN SPEIDER
+Se etter noen speidere med samme hostmask: /check <nick/hostmask>
+Informasjon om speider: /whois <nick>
+Mer informasjon om speider /whois info <nick>
+IP til speider: /userip <nick>
+NickServ informasjon om speider: /nickserv info <nick>
+IRC-klient speideren bruker: /ctcp <nick> version
+Tiden speideren har: /ctcp <nick> time
+Pingen mellom deg og speideren: /ctcp <nick> ping
 
 
-# KOMMANDOER SOM FUNGERER UTEN CHANSERV RETTIGHETER
-Kast ut en bruker fra kanal: /kick <channel> <nick> <reason>
-Kast ut en bruker fra ScoutLink: /kill <nickname> <reason>
-Utesteng en bruker fra ScoutLink: /gline <hostmask> <duration>: <reason>
-Kast ut en bruker fra kanal med spesifikk tid: /tban <channel> <duration> <hostmask>
-Tving en bruker til å ikke endre kallenavn: /mode #<channel> +b N:<hostmask>
+# KAST UT EN SPEIDER
+Kast ut en speider fra en kanal: /kick <channel> <nick> <reason>
+Utestend en speider fra en kanal: /mode <channel> +b <hostmask>
+Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <channel> <duration> <hostmask>
+Kast ut en speider fra ScoutLink: /kill <nickname> <reason>
+Utesteng en speider fra ScoutLink: /gline <hostmask> <duration>: <reason>
 
 
-# SA-KOMMANDOER
-Tving en bruker å forlate kanal: /sapart <nick> <channel> <reason>
-Tving en bruker å bli med i en kanal: /sajoin <nick> <channel>
-Tving en bruker til å skifte kallenavn: /sanick <nick> <new nick>
-Kast ut en bruker fra en kanal: /sakick <nick> <channel> <reason>
+# TVING EN SPEIDER TIL Å IKKE ENDRE KALLENAVN
+Tving en speider til å ikke endre kallenavn: /mode #<channel> +b N:<hostmask>
+
+
+# DIVERSE SA-KOMMANDOER
+Tving en speider å forlate kanal: /sapart <nick> <channel> <reason>
+Tving en speider å bli med i en kanal: /sajoin <nick> <channel>
+Tving en speider til å skifte kallenavn: /sanick <nick> <new nick>
+Kast ut en speider fra en kanal: /sakick <nick> <channel> <reason>
 
 
 # SENDE UT EN MELDING TIL ALLE
 Send ut en /me melding til alle kanaler du er på (kun mIRC): /ame <message>
-Send ut en melding til alle brukere på ScoutLink: /global
+Send ut en melding til alle speidere på ScoutLink: /global
 
 
-# AVANSERTE KOMMANDOER SOM DU NEPPE HAR BRUK FOR
+# AVANSERTE KOMMANDOER DU NEPPE HAR BRUK FOR
 Skru av mlock i en kanal: /chanserv set <channel> mlock off
+Se nettverksstatus: /map
