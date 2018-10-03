@@ -1,4 +1,4 @@
-# OPER LOGIN/UTLOGGING
+# LOG INN ELLER UT SOM IRCOP
 Log inn som IRCOP: /oper <username> <password>
 Log ut som IRCOP: /mode <nickname> -o
 
