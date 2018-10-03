@@ -1,5 +1,3 @@
-Husk at hostmask = kallenavn!brukernavn@hostname
-
 # OPER LOGIN/UTLOGGING
 Log inn som IRCOP: /oper <username> <password>
 Log ut som IRCOP: /mode <nickname> -o
@@ -17,7 +15,7 @@ DeVoice i en kanal: /mode <channel> -v <nick>
 
 
 # FÅ INFORMASJON OM EN SPEIDER
-Se etter noen speidere med samme hostmask: /check <nick/hostmask>
+Se etter noen speidere med samme hostmask: /check nick ELLER /check <kallenavn!brukernavn@hostname>
 Informasjon om speider: /whois <nick>
 Mer informasjon om speider /whois info <nick>
 IP til speider: /userip <nick>
@@ -29,20 +27,20 @@ Pingen mellom deg og speideren: /ctcp <nick> ping
 
 # KAST UT EN SPEIDER FRA EN KANAL
 Kast ut en speider fra en kanal: /kick <channel> <nick> <reason>
-Utesteng en speider fra en kanal: /mode <channel> +b <hostmask>
-Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <channel> <duration> <hostmask>
-Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <channel> -b <hostmask>
+Utesteng en speider fra en kanal: /mode <channel> +b <kallenavn!brukernavn@hostname>
+Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <channel> <duration> <kallenavn!brukernavn@hostname>
+Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <channel> -b <kallenavn!brukernavn@hostname>
 
 
 # KAST UT EN SPEIDER FRA SCOUTLINK
 Kast ut en speider fra ScoutLink: /kill <nickname> <reason>
-Utesteng en speider fra ScoutLink: /gline <hostmask> <duration>: <reason>
-Fjern gline fra ScoutLink som gjør at speideren er utestengt: /gline <hostmask>
+Utesteng en speider fra ScoutLink: /gline <brukernavn@hostname> <duration>: <reason>
+Fjern gline fra ScoutLink som gjør at speideren er utestengt: /gline <brukernavn@hostname>
 Se alle utestengte speidere fra ScoutLink: /stats g
 
 
 # TVING EN SPEIDER TIL Å IKKE ENDRE KALLENAVN
-Tving en speider til å ikke endre kallenavn: /mode #<channel> +b N:<hostmask>
+Tving en speider til å ikke endre kallenavn: /mode #<channel> +b N:<kallenavn!brukernavn@hostname>
 
 
 # DIVERSE SA-KOMMANDOER
