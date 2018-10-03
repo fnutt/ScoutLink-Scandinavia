@@ -3,8 +3,9 @@ Log inn som IRCOP: /oper <username> <password>
 Log ut som IRCOP: /mode <nickname> -o
 
 
-# TVING DEG SELV TIL Å BLI MED I EN KANAL
-/join <channel> override
+# TVING DEG SELV ELLER SPEIDER TIL Å BLI MED I EN KANAL
+Tving deg selv til å bli med i en kanal: /join <channel> override
+Tving en speider å bli med i en kanal: /sajoin <nick> <channel>
 
 
 # OP/DEOP/VOICE/DEVOICE I EN KANAL
@@ -25,8 +26,10 @@ Tiden speideren har: /ctcp <nick> time
 Pingen mellom deg og speideren: /ctcp <nick> ping
 
 
-# KAST UT EN SPEIDER FRA EN KANAL
-Kast ut en speider fra en kanal: /kick <channel> <nick> <reason>
+# KAST UT EN SPEIDER FRA EN KANAL/SCOUTLINK
+Tving en speider til å forlate en kanal: /sapart <nick> <channel> <reason>
+
+Kast ut en speider fra en kanal: /kick <channel> <nick> <reason> ELLER /sakick <nick> <channel> <reason>
 Utesteng en speider fra en kanal: /mode <channel> +b <kallenavn!brukernavn@hostname>
 Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <channel> <duration> <kallenavn!brukernavn@hostname>
 Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <channel> -b <kallenavn!brukernavn@hostname>
@@ -39,15 +42,9 @@ Fjern gline fra ScoutLink som gjør at speideren er utestengt: /gline <brukernav
 Se alle utestengte speidere fra ScoutLink: /stats g
 
 
-# FORHINDRE EN SPEIDER Å ENDRE KALLENAVN
+# DIVERSE SPEIDER KALLENAVN KOMMANDOER
 Forhindre en speider å endre kallenavn: /mode #<channel> +b N:<kallenavn!brukernavn@hostname>
-
-
-# DIVERSE SA-KOMMANDOER
-Tving en speider å forlate kanal: /sapart <nick> <channel> <reason>
-Tving en speider å bli med i en kanal: /sajoin <nick> <channel>
-Tving en speider til å skifte kallenavn: /sanick <nick> <new nick>
-Kast ut en speider fra en kanal: /sakick <nick> <channel> <reason>
+Tving en speider til å endre kallenavn: /sanick <nick> <new nick>
 
 
 # SENDE UT EN MELDING TIL ALLE
