@@ -27,9 +27,8 @@ Tiden speideren har: /ctcp <kallenavn> time
 Pingen mellom deg og speideren: /ctcp <kallenavn> ping
 
 
-# KAST UT EN SPEIDER FRA EN KANAL/SCOUTLINK
+# KAST UT EN SPEIDER FRA EN KANAL
 Tving en speider til å forlate en kanal: /sapart <kallenavn> <kanal> <begrunnelse>
-
 Kast ut en speider fra en kanal: /kick <kanal> <kallenavn> <begrunnelse> ELLER /sakick <kallenavn> <kanal> <begrunnelse>
 Utesteng en speider fra en kanal: /mode <kanal> +b <kallenavn!brukernavn@hostname>
 Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <kanal> <tid> <kallenavn!brukernavn@hostname>
