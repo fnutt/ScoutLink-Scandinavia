@@ -39,8 +39,8 @@ Fjern gline fra ScoutLink som gjør at speideren er utestengt: /gline <brukernav
 Se alle utestengte speidere fra ScoutLink: /stats g
 
 
-# TVING EN SPEIDER TIL Å IKKE ENDRE KALLENAVN
-Tving en speider til å ikke endre kallenavn: /mode #<channel> +b N:<kallenavn!brukernavn@hostname>
+# FORHINDRE EN SPEIDER Å ENDRE KALLENAVN
+Forhindre en speider å endre kallenavn: /mode #<channel> +b N:<kallenavn!brukernavn@hostname>
 
 
 # DIVERSE SA-KOMMANDOER
