@@ -32,17 +32,19 @@ Tving en speider til å forlate en kanal: /sapart <kallenavn> <kanal> <begrunnel
 Kast ut en speider fra en kanal: /kick <kanal> <kallenavn> <begrunnelse> ELLER /sakick <kallenavn> <kanal> <begrunnelse>
 Utesteng en speider fra en kanal: /mode <kanal> +b <kallenavn!brukernavn@hostname>
 Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <kanal> <tid> <kallenavn!brukernavn@hostname>
+
 Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <kanal> -b <kallenavn!brukernavn@hostname>
 
 
 # KAST UT EN SPEIDER FRA SCOUTLINK
 Kast ut en speider fra ScoutLink: /kill <nickname> <begrunnelse>
 Utesteng en speider fra ScoutLink: /gline <brukernavn@hostname> <tid>: <begrunnelse>
+
 Fjern gline fra ScoutLink som gjør at speideren er utestengt: /gline <brukernavn@hostname>
 Se alle utestengte speidere fra ScoutLink: /stats g
 
 
-# DIVERSE SPEIDER KALLENAVN KOMMANDOER
+# SPEIDER KALLENAVN
 Forhindre en speider å endre kallenavn: /mode #<kanal> +b N:<kallenavn!brukernavn@hostname>
 Tving en speider til å endre kallenavn: /sanick <kallenavn> <nytt kallenavn>
 
