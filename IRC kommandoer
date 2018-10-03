@@ -59,4 +59,6 @@
   - Skru av mlock i en kanal: /chanserv set <kanal> mlock off
   - Se nettverksstatus: /map
   
-  Flere InspIRCd kommandoer: https://wiki.inspircd.org/Commands
+  BotTeam bot-scan kommandoer: https://botteam.scoutlink.net/ninjax/
+  BotTeam bot-scan status: http://epic.botteam.org/bcp (brukernavn: scandinavia, passord: nr. 1
+  InspIRCd kommandoer: https://wiki.inspircd.org/Commands
