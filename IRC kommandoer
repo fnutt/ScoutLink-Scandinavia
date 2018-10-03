@@ -6,7 +6,7 @@
 # BLI MED I EN KANAL
   - Bli med i en kanal på vanlig måte: /join <kanal>
   - Tving deg selv til å bli med i en kanal: /join <kanal> override
-  - Tving en speider å bli med i en kanal: /sajoin <kallenavn> <kanal>
+  - Tving en speider til å bli med i en kanal: /sajoin <kallenavn> <kanal>
 
 
 # OP/DEOP/VOICE/DEVOICE I EN KANAL
