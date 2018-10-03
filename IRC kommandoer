@@ -33,7 +33,7 @@
   - Utesteng en speider fra en kanal: /mode <kanal> +b <kallenavn!brukernavn@hostname>
   - Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <kanal> <tid> <kallenavn!brukernavn@hostname>
 
-Se alle utestengte speidere fra en kanal: /banlist ELLER /mode <kanal> +b
+  - Se alle utestengte speidere fra en kanal: /banlist ELLER /mode <kanal> +b
   - Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <kanal> -b <kallenavn!brukernavn@hostname>
 
 
@@ -41,7 +41,7 @@ Se alle utestengte speidere fra en kanal: /banlist ELLER /mode <kanal> +b
   - Kast ut en speider fra ScoutLink: /kill <nickname> <begrunnelse>
   - Utesteng en speider fra ScoutLink: /gline <brukernavn@hostname> <tid>: <begrunnelse>
 
-Se alle utestengte speidere fra ScoutLink: /stats g
+  - Se alle utestengte speidere fra ScoutLink: /stats g
   - Fjern gline fra ScoutLink som gjør at speideren er utestengt: /gline <brukernavn@hostname>
 
 
