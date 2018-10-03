@@ -58,3 +58,5 @@
 # AVANSERTE KOMMANDOER DU NEPPE HAR BRUK FOR
   - Skru av mlock i en kanal: /chanserv set <kanal> mlock off
   - Se nettverksstatus: /map
+  
+  Flere InspIRCd kommandoer: https://wiki.inspircd.org/Commands
