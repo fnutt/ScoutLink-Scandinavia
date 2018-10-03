@@ -52,7 +52,7 @@
 
 # SENDE UT EN MELDING TIL ALLE
   - Send ut en /me melding til alle kanaler du er på (kun mIRC): /ame <melding>
-  - Send ut en melding til alle speidere på ScoutLink: /global
+  - Send ut en melding til alle speidere på ScoutLink: /global <melding>
 
 
 # AVANSERTE KOMMANDOER DU NEPPE HAR BRUK FOR
