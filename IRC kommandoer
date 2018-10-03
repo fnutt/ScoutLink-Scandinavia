@@ -11,10 +11,11 @@ Log ut som IRCOP: /mode <nickname> -o
 /join <channel> override
 
 
-# OP/DEOP I EN KANAL
+# OP/DEOP/VOICE/DEVOICE I EN KANAL
 OP i en kanal: /mode <channel> +o <nick>
 DeOP i en kanal: /mode <channel> -o <nick>
-
+Voice i en kanal: /mode <channel> +v <nick>
+DeVoice i en kanal: /mode <channel> -v <nick>
 
 # FÅ INFORMASJON OM EN SPEIDER
 Se etter noen speidere med samme hostmask: /check <nick/hostmask>
