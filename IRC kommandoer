@@ -1,65 +1,47 @@
-; Alt er på engelsk. Norsk versjon kommer senere.
-
-# OPERSERV
-Op: /operserv mode <channel> +o <nickname>
-Deop: /operserv mode <channel> -o <nickname>
-Admin: /operserv mode <channel> +a <nickname>
-De-admin: /operserv mode <channel> -a <nickname>
-Voice: /operserv mode <channel> +v <nickname>
-Devoice: /operserv mode <channel> -v <nickname>
-
-Kick: /operserv kick <channel> <nickname> <reason>
-Ban: /operserv mode <channel> +b <hostmask>
+# OPER LOGIN/UTLOGGING
+Log inn som IRCOP: /oper <username> <password>
+Log ut som IRCOP: /mode <nickname> -o
 
 
-# SA
-Force part: /sapart <nick> <channel> <reason>
-Force join: /sajoin <nick> <channel>
-Force nickchange: /sanick <nick> <new nick>
-Kick: /sakick <nick> <channel> <reason>
+# TVING DEG SELV TIL Å BLI MED I EN KANAL
+/join <channel> override
 
 
-# GET INFORMATION ABOUT USER
-Look after someone with same hostmask: /check <nick/hostmask>
-
-Information about user: /whois <nick>
-More information about user: /whois info <nick>
-
-IP of user: /userip <nick>
-
-NickServ information about user: /nickserv info <nick>
-
-What irc-client: /ctcp <nick> version
-What time user got: /ctcp <nick> time
-How long ping use: /ctcp <nick> ping
+# OP/DEOP I EN KANAL
+OP i en kanal: /mode <channel> +o <nick>
+DeOP i en kanal: /mode <channel> -o <nick>
 
 
-# OP/DEOP
-/mode <channel> +o <nick>
-/mode <channel> -o <nick>
+# FÅ INFORMASJON OM BRUKER
+Se etter noen med samme hostmask: /check <nick/hostmask>
+Informasjon om bruker: /whois <nick>
+Mer informasjon om bruker /whois info <nick>
+IP til bruker: /userip <nick>
+NickServ informasjon om bruker: /nickserv info <nick>
+IRC-klient brukeren bruker: /ctcp <nick> version
+Tiden brukeren har: /ctcp <nick> time
+Pingen mellom deg og brukeren: /ctcp <nick> ping
 
 
-# SEND OUT MESSAGE
-Send out a message on all chats I'm on: /ame <message>
-Send out message to everyone everywhere: /global 
+# KOMMANDOER SOM FUNGERER UTEN CHANSERV RETTIGHETER
+Kast ut en bruker fra kanal: /kick <channel> <nick> <reason>
+Kast ut en bruker fra ScoutLink: /kill <nickname> <reason>
+Utesteng en bruker fra ScoutLink: /gline <hostmask> <duration>: <reason>
+Kast ut en bruker fra kanal med spesifikk tid: /tban <channel> <duration> <hostmask>
+Tving en bruker til å ikke endre kallenavn: /mode #<channel> +b N:<hostmask>
 
 
-# OPER LOGIN/OUTLOG
-Log in as ircop: /oper <username> <password>
-Log out as ircop: /mode <nickname> -o
+# SA-KOMMANDOER
+Tving en bruker å forlate kanal: /sapart <nick> <channel> <reason>
+Tving en bruker å bli med i en kanal: /sajoin <nick> <channel>
+Tving en bruker til å skifte kallenavn: /sanick <nick> <new nick>
+Kast ut en bruker fra en kanal: /sakick <nick> <channel> <reason>
 
 
-# JOIN CHANNEL OVERRIDE
-Join channel with override: /join <channel> override
+# SENDE UT EN MELDING TIL ALLE
+Send ut en /me melding til alle kanaler du er på (kun mIRC): /ame <message>
+Send ut en melding til alle brukere på ScoutLink: /global
 
 
-# OFTEN USED COMMANDS WHICH DOES NOT REQUIRE CHANSERV RIGHTS
-Kick: /kick <channel> <nick> <reason>
-KILL: /kill <nickname> <reason>
-GLINE: /gline <hostmask> <duration>: <reason>
-Ban with time: /tban <channel> <duration> <hostmask>
-Prevent nick changes: /mode #<channel> +b N:<hostmask>
-
-
-# DIVERSE
-/chanserv set <channel> mlock off
+# AVANSERTE KOMMANDOER SOM DU NEPPE HAR BRUK FOR
+Skru av mlock i en kanal: /chanserv set <channel> mlock off
