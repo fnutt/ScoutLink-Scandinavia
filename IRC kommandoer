@@ -1,6 +1,4 @@
-HOSTMASK = Kallenavn!brukernavn@hostname
-
----
+Husk at hostmask = kallenavn!brukernavn@hostname
 
 # OPER LOGIN/UTLOGGING
 Log inn som IRCOP: /oper <username> <password>
@@ -17,6 +15,7 @@ DeOP i en kanal: /mode <channel> -o <nick>
 Voice i en kanal: /mode <channel> +v <nick>
 DeVoice i en kanal: /mode <channel> -v <nick>
 
+
 # FÅ INFORMASJON OM EN SPEIDER
 Se etter noen speidere med samme hostmask: /check <nick/hostmask>
 Informasjon om speider: /whois <nick>
@@ -28,12 +27,18 @@ Tiden speideren har: /ctcp <nick> time
 Pingen mellom deg og speideren: /ctcp <nick> ping
 
 
-# KAST UT EN SPEIDER
+# KAST UT EN SPEIDER FRA EN KANAL
 Kast ut en speider fra en kanal: /kick <channel> <nick> <reason>
-Utestend en speider fra en kanal: /mode <channel> +b <hostmask>
+Utesteng en speider fra en kanal: /mode <channel> +b <hostmask>
 Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <channel> <duration> <hostmask>
+Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <channel> -b <hostmask>
+
+
+# KAST UT EN SPEIDER FRA SCOUTLINK
 Kast ut en speider fra ScoutLink: /kill <nickname> <reason>
 Utesteng en speider fra ScoutLink: /gline <hostmask> <duration>: <reason>
+Fjern gline fra ScoutLink som gjør at speideren er utestengt: /gline <hostmask>
+Se alle utestengte speidere fra ScoutLink: /stats g
 
 
 # TVING EN SPEIDER TIL Å IKKE ENDRE KALLENAVN
