@@ -29,7 +29,7 @@
 
 # KAST UT EN SPEIDER FRA EN KANAL
   - Tving en speider til å forlate en kanal: /sapart <kallenavn> <kanal> <begrunnelse>
-  - Kast ut en speider fra en kanal: /kick <kanal> <kallenavn> <begrunnelse> ELLER /sakick <kallenavn> <kanal> <begrunnelse>
+  - Kast ut en speider fra en kanal: /sakick <kallenavn> <kanal> <begrunnelse> ELLER /kick <kanal> <kallenavn> <begrunnelse>
   - Utesteng en speider fra en kanal: /mode <kanal> +b <kallenavn!brukernavn@hostname>
   - Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <kanal> <tid> <kallenavn!brukernavn@hostname>
 
