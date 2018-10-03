@@ -1,57 +1,58 @@
 # LOG INN ELLER UT SOM IRCOP
-Log inn som IRCOP: /oper <username> <password>
-Log ut som IRCOP: /mode <nickname> -o
+Log inn som IRCOP: /oper <brukernavn> <passord>
+Log ut som IRCOP: /mode <kallenavn> -o
 
 
-# TVING DEG SELV ELLER SPEIDER TIL Å BLI MED I EN KANAL
-Tving deg selv til å bli med i en kanal: /join <channel> override
-Tving en speider å bli med i en kanal: /sajoin <nick> <channel>
+# BLI MED I EN KANAL
+Bli med i en kanal på vanlig måte: /join <kanal>
+Tving deg selv til å bli med i en kanal: /join <kanal> override
+Tving en speider å bli med i en kanal: /sajoin <kallenavn> <kanal>
 
 
 # OP/DEOP/VOICE/DEVOICE I EN KANAL
-OP i en kanal: /mode <channel> +o <nick>
-DeOP i en kanal: /mode <channel> -o <nick>
-Voice i en kanal: /mode <channel> +v <nick>
-DeVoice i en kanal: /mode <channel> -v <nick>
+OP i en kanal: /mode <kanal> +o <kallenavn>
+DeOP i en kanal: /mode <kanal> -o <kallenavn>
+Voice i en kanal: /mode <kanal> +v <kallenavn>
+DeVoice i en kanal: /mode <kanal> -v <kallenavn>
 
 
 # FÅ INFORMASJON OM EN SPEIDER
-Se etter noen speidere med samme hostmask: /check nick ELLER /check <kallenavn!brukernavn@hostname>
-Informasjon om speider: /whois <nick>
-Mer informasjon om speider /whois info <nick>
-IP til speider: /userip <nick>
-NickServ informasjon om speider: /nickserv info <nick>
-IRC-klient speideren bruker: /ctcp <nick> version
-Tiden speideren har: /ctcp <nick> time
-Pingen mellom deg og speideren: /ctcp <nick> ping
+Se etter noen speidere med samme hostmask: /check <nick> ELLER /check <kallenavn!brukernavn@hostname>
+Informasjon om speider: /whois <kallenavn>
+Mer informasjon om speider /whois info <kallenavn>
+IP til speider: /userip <kallenavn>
+NickServ informasjon om speider: /nickserv info <kallenavn>
+IRC-klient speideren bruker: /ctcp <kallenavn> version
+Tiden speideren har: /ctcp <kallenavn> time
+Pingen mellom deg og speideren: /ctcp <kallenavn> ping
 
 
 # KAST UT EN SPEIDER FRA EN KANAL/SCOUTLINK
-Tving en speider til å forlate en kanal: /sapart <nick> <channel> <reason>
+Tving en speider til å forlate en kanal: /sapart <kallenavn> <kanal> <begrunnelse>
 
-Kast ut en speider fra en kanal: /kick <channel> <nick> <reason> ELLER /sakick <nick> <channel> <reason>
-Utesteng en speider fra en kanal: /mode <channel> +b <kallenavn!brukernavn@hostname>
-Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <channel> <duration> <kallenavn!brukernavn@hostname>
-Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <channel> -b <kallenavn!brukernavn@hostname>
+Kast ut en speider fra en kanal: /kick <kanal> <kallenavn> <begrunnelse> ELLER /sakick <kallenavn> <kanal> <begrunnelse>
+Utesteng en speider fra en kanal: /mode <kanal> +b <kallenavn!brukernavn@hostname>
+Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <kanal> <tid> <kallenavn!brukernavn@hostname>
+Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <kanal> -b <kallenavn!brukernavn@hostname>
 
 
 # KAST UT EN SPEIDER FRA SCOUTLINK
-Kast ut en speider fra ScoutLink: /kill <nickname> <reason>
-Utesteng en speider fra ScoutLink: /gline <brukernavn@hostname> <duration>: <reason>
+Kast ut en speider fra ScoutLink: /kill <nickname> <begrunnelse>
+Utesteng en speider fra ScoutLink: /gline <brukernavn@hostname> <tid>: <begrunnelse>
 Fjern gline fra ScoutLink som gjør at speideren er utestengt: /gline <brukernavn@hostname>
 Se alle utestengte speidere fra ScoutLink: /stats g
 
 
 # DIVERSE SPEIDER KALLENAVN KOMMANDOER
-Forhindre en speider å endre kallenavn: /mode #<channel> +b N:<kallenavn!brukernavn@hostname>
-Tving en speider til å endre kallenavn: /sanick <nick> <new nick>
+Forhindre en speider å endre kallenavn: /mode #<kanal> +b N:<kallenavn!brukernavn@hostname>
+Tving en speider til å endre kallenavn: /sanick <kallenavn> <nytt kallenavn>
 
 
 # SENDE UT EN MELDING TIL ALLE
-Send ut en /me melding til alle kanaler du er på (kun mIRC): /ame <message>
+Send ut en /me melding til alle kanaler du er på (kun mIRC): /ame <melding>
 Send ut en melding til alle speidere på ScoutLink: /global
 
 
 # AVANSERTE KOMMANDOER DU NEPPE HAR BRUK FOR
-Skru av mlock i en kanal: /chanserv set <channel> mlock off
+Skru av mlock i en kanal: /chanserv set <kanal> mlock off
 Se nettverksstatus: /map
