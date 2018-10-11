@@ -1,0 +1,40 @@
+# BLI MED I EN KANAL
+  - Bli med i en kanal på vanlig måte: /join <kanal>
+  - Tving deg selv til å bli med i en kanal: /join <kanal> override
+
+
+# OP/DEOP/VOICE/DEVOICE I EN KANAL
+  - OP i en kanal: /msg chanserv op <kanal>
+  - DeOP i en kanal: /msg chanserv deop <kanal>
+  - Voice i en kanal: /mode <kanal> +v <kallenavn>
+  - DeVoice i en kanal: /mode <kanal> -v <kallenavn>
+
+
+# FÅ INFORMASJON OM EN SPEIDER
+  - Informasjon om speider: /whois <kallenavn>
+  - Mer informasjon om speider /whois info <kallenavn>
+  - NickServ informasjon om speider: /nickserv info <kallenavn>
+  - IRC-klient speideren bruker: /ctcp <kallenavn> version
+  - Tiden speideren har: /ctcp <kallenavn> time
+  - Pingen mellom deg og speideren: /ctcp <kallenavn> ping
+
+
+# KAST UT EN SPEIDER FRA EN KANAL
+  - Kast ut en speider fra en kanal: /kick <kanal> <kallenavn> <begrunnelse> ELLER /msg chanserv kick <kanal> <kallenavn> <begrunnelse>
+  - Utesteng en speider fra en kanal: /mode <kanal> +b <kallenavn!brukernavn@hostname> ELLER /msg chanserv ban <kanal> <kallenavn> <begrunnelse>
+  - Kast ut en speider fra kanal med spesifikk tid (kun mIRC): /tban <kanal> <tid> <kallenavn!brukernavn@hostname>
+
+  - Se alle utestengte speidere fra en kanal: /banlist ELLER /mode <kanal> +b
+  - Fjern ban fra en kanal som gjør at speideren er utestengt: /mode <kanal> -b <kallenavn!brukernavn@hostname> ELLER /msg chanserv unban <kanal> <kallenavn!brukernavn@hostname>
+
+
+# SPEIDER KALLENAVN
+  - Forhindre en speider å endre kallenavn: /mode #<kanal> +b N:<kallenavn!brukernavn@hostname>
+
+
+# SENDE UT EN MELDING TIL ALLE
+  - Send ut en /me melding til alle kanaler du er på (kun mIRC): /ame <melding>
+
+
+# AVANSERTE KOMMANDOER DU NEPPE HAR BRUK FOR
+  - 
