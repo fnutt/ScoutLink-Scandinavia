@@ -1,0 +1,245 @@
+[script]
+n0=alias opconsole {
+n1=  if ($dialog(oc) == oc ) { dialog -v oc oc }
+n2=  else { dialog -m oc oc }
+n3=  if (#scandinavia* iswm $chan || #norsk* iswm $chan || #dansk* iswm $chan || #svenska* iswm $chan) {
+n4=    did -fu oc 200
+n5=  }
+n6=  else { did -fu oc 300 }
+n7=}
+n8=alias F3 opconsole
+n9=menu nicklist,channel {
+n10=  Op-console: opconsole
+n11=}
+n12=
+n13=dialog oc {
+n14=  title "Op-console"
+n15=  size 1490 155 300 310
+n16=
+n17=
+n18=  tab "Norsk",                200, 5 30 170 280
+n19=  tab "English",              300,
+n20=  tab "Språk",                500,
+n21=
+n22=
+n23=  text "Channel:",            060, 5 8 50 20  
+n24=  edit "",                    061, 60 5 80 20, autohs
+n25=  text "Nick:",               062, 145 8 30 20
+n26=  edit "",                    063, 180 5 80 20, autohs
+n27=
+n28=
+n29=  ;Tab 200
+n30=
+n31=  button "Språk",             202, 13 70 90 20, tab200
+n32=  button "Idling",            203, 13 95 90 20, tab200
+n33=  button "Bytte nick",        204, 13 120 90 20, tab200
+n34=  button "Personlig Info",    205, 13 145 90 20, tab200
+n35=  button "PM",                206, 13 170 90 20, tab200
+n36=  button "Regler",            207, 13 195 90 20, tab200
+n37=  button "Webchatbrukere",    208, 13 220 90 20, tab200
+n38=  button "Flooding",          209, 13 245 90 20, tab200
+n39=  button "Banning",           210, 13 270 90 20, tab200
+n40=
+n41=  button "Kick",              222, 103 70 50 20, tab200
+n42=  button "Kick",              223, 103 95 50 20, tab200
+n43=  button "Bytt",              224, 103 120 50 20, tab200
+n44=  button "Kick",              225, 103 145 50 20, tab200
+n45=  button "Kick",              226, 103 170 50 20, tab200
+n46=  button "Kick",              229, 103 245 50 20, tab200
+n47=  button "Kick",              230, 103 270 50 20, tab200 
+n48=
+n49=  ;Tab 300
+n50=
+n51=  button "Language",          302, 13 70 90 20, tab300
+n52=  button "Idling",            303, 13 95 90 20, tab300
+n53=  button "Change nick",       304, 13 120 90 20, tab300
+n54=  button "Personal Info",     305, 13 145 90 20, tab300
+n55=  button "Private Message",   306, 13 170 90 20, tab300
+n56=  button "Rules",             307, 13 195 90 20, tab300
+n57=  button "Webchat users" ,    308, 13 220 90 20, tab300
+n58=  button "Flooding",          309, 13 245 90 20, tab300
+n59=  button "Swearing",          310, 13 270 90 20, tab300
+n60=
+n61=  button "Kick",              322, 103 70 50 20, tab300
+n62=  button "Kick",              323, 103 95 50 20, tab300
+n63=  button "Change",            324, 103 120 50 20, tab300
+n64=  button "Kick",              325, 103 145 50 20, tab300
+n65=  button "Kick",              326, 103 170 50 20, tab300
+n66=  button "Kick",              329, 103 245 50 20, tab300
+n67=  button "Kick",              330, 103 270 50 20, tab300 
+n68=
+n69=
+n70=  button "Spanish",           512, 13 70 90 20, tab500
+n71=  button "French",            513, 13 95 90 20, tab500
+n72=  button "German",            514, 13 120 90 20, tab500
+n73=  button "Portuguese",        515, 13 145 90 20, tab500
+n74=  button "Italian",           516, 13 170 90 20, tab500
+n75=  button "Norwegian",         517, 13 195 90 20, tab500
+n76=  button "Swedish",           518, 13 220 90 20, tab500
+n77=  button "Chinese",           519, 13 245 90 20, tab500
+n78=  button "Dutch",             520, 13 270 90 20, tab500
+n79=
+n80=  box "IRCop",                400, 180 45 100 260,
+n81=  button "Nick",              412, 185 70 90 20,
+n82=  button "Kick",              401, 185 95 90 20,
+n83=  button "Ban",               402, 185 120 45 20,
+n84=  button "Tban",              414, 230 120 45 20,
+n85=  button "Kill",              403, 185 145 90 20,
+n86=  button "Gline",             404, 185 170 90 20,
+n87=  box "Duration:",            405, 185 195 90 100,
+n88=  radio "5m",                 406, 190 210 35 20, group
+n89=  radio "30m",                407, 190 230 35 20, 
+n90=  radio "1h",                 408, 190 250 35 20, 
+n91=  radio "5h",                 409, 230 210 35 20, 
+n92=  radio "1d",                 410, 230 230 35 20, 
+n93=  radio "3d",                 411, 230 250 35 20, 
+n94=  button "Other",             413, 190 270 80 20,
+n95=
+n96=}
+n97=
+n98=;Actions
+n99=on *:dialog:oc:init:0: {
+n100=  .timersnick 0 0 if ($active ischan) && ($snick($active,1)) && ($dialog(oc)) //did -ra $!ifmatch 063 $!snick($active,1)
+n101=  did -o oc 061 1 $active
+n102=  did -c oc 407
+n103=  set %duration 30m
+n104=}
+n105=
+n106=on *:dialog:oc:close:0: {
+n107=  .timersnick off
+n108=}
+n109=
+n110=on *:dialog:oc:sclick:406,407,408,409,410,411:{ 
+n111=  $iif($did($did).state,set %duration $did($did)) 
+n112=}
+n113=
+n114=on *:dialog:oc:sclick:431,432,433,434:{ 
+n115=  $iif($did($did).state,set %reason $did($did)) 
+n116=}
+n117=
+n118=on 1:ACTIVE:#: {
+n119=  if ($dialog(oc) == oc) {
+n120=    did -o oc 061 1 $chan
+n121=    if (#scandinavia* iswm $chan || #scanops iswm $chan || #norsk* iswm $chan || #dansk* iswm $chan || #svenska* iswm $chan) {
+n122=      did -fu oc 200
+n123=    }
+n124=    else { did -fu oc 300 }
+n125=  }
+n126=}
+n127=
+n128=on *:DIALOG:oc:sclick:*: {
+n129=
+n130=  ;felles
+n131=
+n132=  if ($did == 212) { /msg $did(061).text Por favor, si quieren hablar en espanol, se pone /part $did(061).text y /join #espanol. }
+n133=  if ($did == 213) { /msg $did(061).text Pour communiquer en français, veuillez s'il vous plaît tapez /join #francais et /part $did(061).text pour utiliser le canal #francais. Merci! }
+n134=  if ($did == 214) { /msg $did(061).text Wenn du deutsch sprechen möchtest, bitte /part $did(061).text und /join #deutsch }
+n135=  if ($did == 215) { /msg $did(061).text Se você quer falar português, por favor digite /part $did(061).text e /join #portuguese }
+n136=  if ($did == 216) { /msg $did(061).text Per favore se vuoi parlare italiano, por favore /part $did(061).text ed /join #italiano }
+n137=  if ($did == 217) { /msg $did(061).text Hvis du vil skrive på norsk, vennligst skriv /part $did(061).text og /join #scandinavia }
+n138=  if ($did == 218) { /msg $did(061).text Om du vill prata svenska, lämna $did(061).text och anslut till #scandinavia }
+n139=  if ($did == 219) { /msg $did(061).text Ruguo ni yao shuo zhongwen, qing ni likai $did(061).text $+ , lanhou zai jinru #chinese }
+n140=  if ($did == 220) { /msg $did(061).text Als je nederlands wilt praten /part $did(061).text en /join #dutch }
+n141=
+n142=
+n143=  ;tab200
+n144=  if ($did == 202) { /msg $did(061).text $did(063).text $+ : $did(061).text is an Scandinavian languages only channel. Please speak only scandinavian here or join the appropriate language channel. }
+n145=  if ($did == 203) { /msg $did(061).text $did(063).text $+ : Vennligst ikke heng i kanalene uten å prate i mer enn 30 minutter. }
+n146=  if ($did == 204) { /msg $did(061).text $did(063).text $+ : Hvis du vil endre kallenavnet ditt, skriv /nick <nytt nick> }
+n147=  if ($did == 205) { /msg $did(061).text $did(063).text $+ : For din egen sikkerhet, ikke gi ut personlig info, som epostadresse, telefonnummer eller fullt navn i kanalene.  }
+n148=  if ($did == 206) { /msg $did(061).text $did(063).text $+ : Det er ikke alle som liker å prate privat. Snakk gjerne i kanalene i steden - og spør før du sender private meldinger til noen. }
+n149=  if ($did == 207) { /msg $did(061).text $did(063).text $+ : Les gjerne reglene våre på https://www.scoutlink.net/rules/ }
+n150=  if ($did == 208) { /msg $did(061).text $did(063).text $+ : Webchatbrukere: Vil du bytte nick? Skriv inn /nick <nytt nick> }
+n151=  if ($did == 209) { /msg $did(061).text $did(oc,063).text $+ , Vennligst ikke skriv tull (spam) eller mange gjentakelser etter hverandre (flood). Se www.scoutlink.net/rules! }
+n152=  if ($did == 210) { /msg $did(061).text $did(oc,063).text $+ , Vennligst ikke bann i $did(061).text $+ . }
+n153=
+n154=  if ($did == 222) { /kick $did(061).text $did(061).text is an Scandinavian languages only channel. Please speak only scandinavian here or join the appropriate language channel. }
+n155=  if ($did == 223) { /kick $did(061).text Vennligst ikke heng i $did(063).text uten å prate i mer enn 30 minutter. }
+n156=  if ($did == 224) { sanick $did(063).text $$?="Endre $did(063).text sitt nick til:" }
+n157=  if ($did == 225) { /kick $did(061).text $did(063).text For din egen sikkerhet, ikke gi ut personlig info, som epostadresse, telefonnummer eller fullt navn i kanalene. }
+n158=  if ($did == 226) { /kick $did(061).text $did(063).text Det er ikke alle som liker å prate privat. Snakk gjerne i kanalene i steden - og spør før du sender private meldinger til noen.  }
+n159=  if ($did == 229) { /kick $did(061).text $did(063).text Vennligst ikke skriv tull (spam) eller mange gjentakelser etter hverandre (flood). Se www.scoutlink.net/rules! }
+n160=  if ($did == 230) { /kick $did(061).text $did(063).text Vennligst ikke bann i $did(061).text $+ . } 
+n161=
+n162=
+n163=  ;tab300
+n164=  if ($did == 302) { /msg $did(061).text $did(063).text $+ : $did(061).text is an English only channel. Please speak only english here or join the appropriate language channel. }
+n165=  if ($did == 303) { /msg $did(061).text $did(063).text $+ : Idling! You may not idle in this channel for more than 30 mins }
+n166=  if ($did == 304) { /msg $did(061).text $did(063).text $+ : If you want to change your nickname, type /nick NEWNICK Hint replace the caps with your new nickname! }
+n167=  if ($did == 305) { /msg $did(061).text $did(063).text $+ : For your own safety, please DO NOT give out email addresses, ICQ numbers or other personal information in a channel. }
+n168=  if ($did == 306) { /msg $did(061).text $did(063).text $+ : I prefer to chat in the channels, instead of private messages =) }
+n169=  if ($did == 307) { /msg $did(061).text $did(063).text $+ : Rules to the channels to include - no swearing in any language, no flooding, scout/guide laws are laws of the channels and the that the general rules of Scoutlink are observed. https://www.scoutlink.net/rules/ }
+n170=  if ($did == 308) { /msg $did(061).text $did(063).text $+ : Webchat Users: Want to change your nick from Guest####?? Type: /nick newnick Hint: Replace newnick with the nickname you wish to use. }
+n171=  if ($did == 309) { /msg $did(061).text $did(063).text $+ : Please stop flooding $did(061).text $+ . }
+n172=  if ($did == 310) { /msg $did(061).text $did(063).text $+ , Please stop swearing in $did(061).text $+ . }
+n173=
+n174=  if ($did == 322) { /kick $did(061).text $did(063).text $did(061).text is an English only channel. Please speak only english here or join the appropriate language channel. }
+n175=  if ($did == 323) { /kick $did(061).text $did(063).text Idling! You may not idle in this channel for more than 15 mins }
+n176=  if ($did == 324) { sanick $did(063).text $$?="Change $did(063).text $+ 's nick to:" }
+n177=  if ($did == 325) { /kick $did(061).text $did(063).text For your own safety, please DO NOT give out email addresses, ICQ numbers or other personal information in a channel. }
+n178=  if ($did == 326) { /kick $did(061).text $did(063).text Please do not private message ops when you can chat with us all on this channel. }
+n179=  if ($did == 329) { /kick $did(061).text $did(063).text $did(oc,063).text $+ , Please stop flooding $did(061).text $+ . }
+n180=  if ($did == 330) { /kick $did(061).text $did(063).text $did(oc,063).text $+, Please stop swearing in $did(061).text $+ . }
+n181=
+n182=  ;IRCop
+n183=  if ($did == 412) { sanick $did(063).text $$?="Change $did(063).text $+ 's nick to:" }
+n184=  if ($did == 401) { kick $did(061).text $did(063).text $$?="Kick $did(063).text from $did(061).text for:" }
+n185=  if ($did == 402) { ban $did(061).text $did(063).text 1 }
+n186=  if ($did == 414) { tban $did(061).text %duration $address($did(063).text, 1) } 
+n187=  if ($did == 403) { kill $did(063).text $$?="Enter reason for killing $did(063).text $+ :" }
+n188=  if ($did == 404) { gline $did(063).text %duration : $+ Tilbakevendende dårlig oppførsel med flere regelbrudd. Ta dere en pause. See www.scoutlink.net/banned for information and appeals. Banned by $me for %duration $+ . }
+n189=  if ($did == 413) { set %duration $$?="Duration for gline:" | did -o oc 404 1 Gline %duration}
+n190=
+n191=  }
+n192=}
+n193=
+n194=
+n195=menu status,menubar {
+n196=  $iif(%chanservfilter,$style(1)) Chanserv notice window ( $+ $iif(%chanservfilter,On,Off) $+ ) {
+n197=    if (%chanservfilter) { unset %chanservfilter | .disable #chanservfilter | echo -a $timestamp 2,15Chanserv notice window 4DISABLED }
+n198=    else { set %chanservfilter ON | .enable #chanservfilter | echo -a $timestamp 2,15Chanserv notice window 3ENABLED }
+n199=  }
+n200=  $iif(%idlekickhider,$style(1)) Hide idle kicks ( $+ $iif(%idlekickhider,On,Off) $+ ) {
+n201=    if (%idlekickhider) { unset %idlekickhider | .disable #idlekickhider | echo -a $timestamp 2,15Hide idle kicks 4DISABLED }
+n202=    else { set %idlekickhider ON | .enable #idlekickhider | echo -a $timestamp 2,15Hide idle kicks 3ENABLED }
+n203=  } 
+n204=  $iif(%autoreply,$style(1)) Automatic reply to private messages ( $+ $iif(%autoreply,On,Off) $+ ) {
+n205=    if (%autoreply) { unset %autoreply | .disable #autoreply | echo -a $timestamp 2,15Autoreply to private messages 4DISABLED }
+n206=    else { set %autoreply ON | .enable #autoreply | echo -a $timestamp 2,15Autoreply to private messages 3ENABLED }
+n207=  } 
+n208=
+n209=}
+n210=
+n211=
+n212=#autoreply on
+n213=On *:Open:?:*: {
+n214=  if ($nick != *status) {
+n215=    .msg $nick Hello $nick $+ !
+n216=    .msg $nick I am currently busy and may not reply
+n217=    .msg $nick For urgent help please ask in channel or in #help
+n218=    .msg $nick To join #help use /join #help
+n219=    .msg $nick If you just want to chat, I prefer to do that in a channel where everyone can participate =)
+n220=    .msg $nick This is an automated message, you do not have to reply.
+n221=    echo $nick $timestamp 4,15User notified about private chat.
+n222=  }
+n223=}
+n224=#autoreply end
+n225=
+n226=#idlekickhider on
+n227=on ^1:PART:#: {
+n228=  if (idle isin $1-) { haltdef }
+n229=  if (inaktiv isin $1-) { haltdef }
+n230=}
+n231=#idlekickhider end
+n232=
+n233=
+n234=#chanservfilter on
+n235=on ^*:NOTICE:*:?: { 
+n236=  if (%chanservfilter == ON) {
+n237=    if ($nick == ChanServ) {
+n238=      if ($window(@Chanserv) != $null) { echo @Chanserv 5 $timestamp < $+ $nick  $+ > $1- | haltdef } 
+n239=      else { window -nke @Chanserv -1 -1 1000 600 /chanserv | titlebar @Chanserv -  Notices | echo @Chanserv 5 $timestamp < $+ $nick  $+ > $1- | haltdef }
+n240=    }
+n241=  } 
+n242=}
+n243=#chanservfilter end
