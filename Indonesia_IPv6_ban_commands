@@ -1,3 +1,5 @@
+# Check https://www-public.imtbs-tsp.eu/~maigron/RIR_Stats/RIR_Delegations/Delegations/IPv6/ID.html for new ones or if someone should be removed
+
 /mode #<channel name> +b G:ID
 /mode #<channel name> +b *!*@*.id
 /mode #<channel name> +b *!*@2001:7fa:2:*
